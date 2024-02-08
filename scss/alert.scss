@@ -1,0 +1,47 @@
+@use "sass:map";
+@mixin alert($bg,$color,$stroke,$icon){
+  width: 427px;
+  height: 70px;
+  padding: 0 72px 0 58px;
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  color: $color;
+  font-family: Roboto,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+  &::before{
+    content: $icon;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+  }
+  button.alert-close{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    svg{
+      stroke: $stroke;
+    }
+  }
+}
+
+
+@each $state in "success","info","error"{
+  .alert-#{$state}{
+    @include alert(
+            map-get($alert-state,$state,'bg'),
+            map-get($alert-state,$state,'color'),
+            map-get($alert-state,$state,'stroke'),
+            map-get($alert-state,$state,'icon')
+    )
+  }
+}

@@ -1,0 +1,31 @@
+@use "sass:math";
+.row{
+  display: flex;
+  flex-flow: row wrap;
+}
+@mixin media ($size,$width,$col){
+  @if ($size=="xs"){
+    @for $i from 1 through $col{
+      .col-#{$i}{
+        width: math.div(100% / $col) * $i;
+        padding: 0 21px;
+        flex: 0 0 auto;
+      }
+    }
+  }
+  @else{
+    @media screen and (min-width: $width){
+      @for $i from 1 through $col{
+        .col-#{$size}-#{$i}{
+          width: math.div(100% / $col) * $i;
+          padding: 0 21px;
+          flex: 0 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@for $i from 1 to length($media){
+  @include media(nth(nth($media,$i),1),(nth($media,$i),2),(nth($media,$i),3));
+}

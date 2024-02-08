@@ -1,0 +1,40 @@
+$main-color: #E6F1FA;
+$main-color-2: #EB5757;
+$advanced: #57A4EB;
+$black: #000000;
+$black-2: #3F3F3F;
+$white: #FFFFFF;
+$gray-1: #828282;
+$light-blue-hover: #F0F2F2;
+$divider: #C4C4C4;
+$link: #0F6DB1;
+$shadow-1: 10px 10px 24px rgba(0, 0, 0, 25%);
+$alert-state: (
+        "success":(
+                "bg":#E3FFE9,
+                "stroke":#98C99A,
+                "color":#27AE60,
+                "icon": url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ik9uIj4KPHJlY3QgaWQ9IlJlY3RhbmdsZSA2LjEiIHg9IjAuODQ5MTIxIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiMyN0FFNjAiLz4KPHBhdGggaWQ9IlZlY3RvciAyIiBkPSJNMi44NDkxMiA0LjVMNS4zNDkxMiA3TDkuMzQ5MTIgMyIgc3Ryb2tlPSJ3aGl0ZSIvPgo8L2c+Cjwvc3ZnPgo=)
+        ),
+        "info":(
+                "bg":#E6F1FA,
+                "stroke":#AFC7DA,
+                "color":#63A6DC,
+                "icon": url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikdyb3VwIDQ1Ij4KPHJlY3QgaWQ9IlJlY3RhbmdsZSA2LjEiIHg9IjAuODQ5MTIxIiB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiM2M0E1REMiLz4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTUuODQ5MTIgMVY2TTUuODQ5MTIgN1Y4LjUiIHN0cm9rZT0id2hpdGUiLz4KPC9nPgo8L3N2Zz4K)
+        ),
+        "error":(
+                "bg":#FFE3E3,
+                "stroke":#C99E98,
+                "color":#EB5757,
+                "icon": url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMSAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9Ikdyb3VwIDMyLjEiPgo8cmVjdCBpZD0iUmVjdGFuZ2xlIDYuMSIgeD0iMC44NDkxMjEiIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCIgZmlsbD0iI0VCNTc1NyIvPgo8cGF0aCBpZD0iVmVjdG9yIiBkPSJNMy4zNDkxMiAyLjVMOC4zNDkxMiA3LjUiIHN0cm9rZT0id2hpdGUiLz4KPHBhdGggaWQ9IlZlY3RvciAyIiBkPSJNMy4zNDkxMiA3LjVMOC4zNDkxMiAyLjUiIHN0cm9rZT0id2hpdGUiLz4KPC9nPgo8L3N2Zz4K)
+        )
+);
+
+$media: [
+["xs",0,4], /*1*/
+["sm",576px,4], /*2*/
+["md",768px,4], /*3*/
+["lg",992px,18], /*4*/
+["xl",1200px,18], /*5*/
+["xxl",1400px,18] /*6*/
+];
